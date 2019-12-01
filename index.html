@@ -38,10 +38,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Discover</a>
+            <a id="discover" class="nav-link" href="#">Discover</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a id="login" class="nav-link" href="#">Login</a>
           </li>
         </ul>
       </div>
@@ -129,6 +129,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    var URL = window.location.href;
+
+    var LoginURL = URL + "/login.html";
+    document.getElementById("login").href = LoginURL;
+  </script>
 
 </body>
 
